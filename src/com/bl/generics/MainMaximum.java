@@ -8,14 +8,14 @@ public class MainMaximum {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Enter First Number: ");
-        int first = scan.nextInt();
+        float first = scan.nextFloat();
 
         System.out.println("Enter Second Number: ");
-        int second = scan.nextInt();
+        float second = scan.nextFloat();
 
         System.out.println("Enter Third Number: ");
-        int third = scan.nextInt();
+        float third = scan.nextFloat();
 
-        max.maxInt(first, second, third);
+        max.maxFloat(first, second, third);
     }
 }
