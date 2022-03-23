@@ -7,15 +7,15 @@ public class MainMaximum {
         Maximum max = new Maximum();
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Enter First Number: ");
-        float first = scan.nextFloat();
+        System.out.println("Enter First Value: ");
+        String first = scan.next();
 
-        System.out.println("Enter Second Number: ");
-        float second = scan.nextFloat();
+        System.out.println("Enter Second Value: ");
+        String second = scan.next();
 
-        System.out.println("Enter Third Number: ");
-        float third = scan.nextFloat();
+        System.out.println("Enter Third Value: ");
+        String third = scan.next();
 
-        max.maxFloat(first, second, third);
+        max.maxString(first, second, third);
     }
 }
