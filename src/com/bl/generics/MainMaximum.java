@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class MainMaximum {
     public static void main(String[] args) {
-        Maximum max = new Maximum();
         Scanner scan = new Scanner(System.in);
+        Maximum max;
 
         while (true) {
             System.out.println("\nSelect Your Choice:\n1.Integer\n2.Float\n3.String");
@@ -14,28 +14,42 @@ public class MainMaximum {
             switch (option) {
                 case 1: {
                     System.out.println("Enter First Number: ");
-                    int first = scan.nextInt();
+                    Integer first = scan.nextInt();
 
                     System.out.println("Enter Second Number: ");
-                    int second = scan.nextInt();
+                    Integer second = scan.nextInt();
 
                     System.out.println("Enter Third Number: ");
-                    int third = scan.nextInt();
+                    Integer third = scan.nextInt();
 
-                    max.maxInt(first, second, third);
+                    System.out.println("Enter Fourth Number: ");
+                    Integer fourth = scan.nextInt();
+
+                    System.out.println("Enter Fifth Number: ");
+                    Integer fifth = scan.nextInt();
+
+                    max = new Maximum<Integer>(first, second, third, fourth, fifth);
+                    max.findMax();
                     break;
                 }
                 case 2: {
                     System.out.println("Enter First Number: ");
-                    float first = scan.nextFloat();
+                    Float first = scan.nextFloat();
 
                     System.out.println("Enter Second Number: ");
-                    float second = scan.nextFloat();
+                    Float second = scan.nextFloat();
 
                     System.out.println("Enter Third Number: ");
-                    float third = scan.nextFloat();
+                    Float third = scan.nextFloat();
 
-                    max.maxFloat(first, second, third);
+                    System.out.println("Enter Fourth Number: ");
+                    Float fourth = scan.nextFloat();
+
+                    System.out.println("Enter Fifth Number: ");
+                    Float fifth = scan.nextFloat();
+
+                    max = new Maximum<Float>(first, second, third, fourth, fifth);
+                    max.findMax();
                     break;
                 }
                 case 3: {
@@ -47,7 +61,15 @@ public class MainMaximum {
 
                     System.out.println("Enter Third Value: ");
                     String third = scan.next();
-                    max.maxString(first, second, third);
+
+                    System.out.println("Enter fourth Value: ");
+                    String fourth = scan.next();
+
+                    System.out.println("Enter fifth Value: ");
+                    String fifth = scan.next();
+
+                    max = new Maximum<String>(first, second, third, fourth, fifth);
+                    max.findMax();
                     break;
                 }
                 default:
