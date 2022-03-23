@@ -29,7 +29,6 @@ public class MainMaximum {
                     Integer fifth = scan.nextInt();
 
                     max = new Maximum<Integer>(first, second, third, fourth, fifth);
-                    max.findMax();
                     break;
                 }
                 case 2: {
@@ -49,7 +48,8 @@ public class MainMaximum {
                     Float fifth = scan.nextFloat();
 
                     max = new Maximum<Float>(first, second, third, fourth, fifth);
-                    max.findMax();
+
+                
                     break;
                 }
                 case 3: {
@@ -62,6 +62,7 @@ public class MainMaximum {
                     System.out.println("Enter Third Value: ");
                     String third = scan.next();
 
+
                     System.out.println("Enter fourth Value: ");
                     String fourth = scan.next();
 
@@ -69,8 +70,7 @@ public class MainMaximum {
                     String fifth = scan.next();
 
                     max = new Maximum<String>(first, second, third, fourth, fifth);
-                    max.findMax();
-                    break;
+                 
                 }
                 default:
                     System.out.println("Enter Choice between 1 to 3");
