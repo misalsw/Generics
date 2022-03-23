@@ -22,8 +22,13 @@ public class MainMaximum {
                     System.out.println("Enter Third Number: ");
                     Integer third = scan.nextInt();
 
-                    max = new Maximum<Integer>(first, second, third);
-                    max.findMax();
+                    System.out.println("Enter Fourth Number: ");
+                    Integer fourth = scan.nextInt();
+
+                    System.out.println("Enter Fifth Number: ");
+                    Integer fifth = scan.nextInt();
+
+                    max = new Maximum<Integer>(first, second, third, fourth, fifth);
                     break;
                 }
                 case 2: {
@@ -36,8 +41,15 @@ public class MainMaximum {
                     System.out.println("Enter Third Number: ");
                     Float third = scan.nextFloat();
 
-                    max = new Maximum<Float>(first, second, third);
-                    max.findMax();
+                    System.out.println("Enter Fourth Number: ");
+                    Float fourth = scan.nextFloat();
+
+                    System.out.println("Enter Fifth Number: ");
+                    Float fifth = scan.nextFloat();
+
+                    max = new Maximum<Float>(first, second, third, fourth, fifth);
+
+                
                     break;
                 }
                 case 3: {
@@ -50,9 +62,15 @@ public class MainMaximum {
                     System.out.println("Enter Third Value: ");
                     String third = scan.next();
 
-                    max = new Maximum<String>(first, second, third);
-                    max.findMax();
-                    break;
+
+                    System.out.println("Enter fourth Value: ");
+                    String fourth = scan.next();
+
+                    System.out.println("Enter fifth Value: ");
+                    String fifth = scan.next();
+
+                    max = new Maximum<String>(first, second, third, fourth, fifth);
+                 
                 }
                 default:
                     System.out.println("Enter Choice between 1 to 3");
